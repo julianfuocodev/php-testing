@@ -1,0 +1,14 @@
+Escribir un programa que dado una oración, y dos palabras, búsque la primer palabra dentro de la oración y la reemplace por la segunda palabra.
+
+function string($txt) {
+	$word = explode(" ", $txt);
+	$word2 = $word[1];		
+	echo $word2 . " " . $word2;
+}
+
+
+string("Escribir texto aqui");
+
+
+
+**Nota** El programa detecta todas las palabras de la oracion, selecciona la numero 2 mediante su posicion en la array y la imprime dos veces.

@@ -1,0 +1,10 @@
+Escribir un programa que dado un string, lo convierta a mayusculas.
+
+
+
+function string($txt) {
+	echo strtoupper($txt);
+	}
+	
+	
+string("transformar a mayuscula");

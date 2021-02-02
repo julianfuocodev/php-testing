@@ -1,0 +1,13 @@
+10-BONUS EXTRA (No obligatorio)
+
+Crear un script que devuelva el siguiente patrón. Utilizar el loop for:
+*  
+* *
+* * *
+* * * 
+* * * * *
+
+
+for ($x = 0; $x <= 5; $x++) {
+	echo str_repeat("*", $x)."<br>";
+}

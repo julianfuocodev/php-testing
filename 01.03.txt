@@ -1,0 +1,12 @@
+3-Escribir un programa que dado dos números enteros, devuelva TRUE si alguno de los números es 30, así como también cuando la suma de los mismos sea 30 o más.
+
+	$num1 = 20;
+	$num2 = 20;
+	
+if ($num1 == 30 or $num2 == 30) {
+	echo "Alguno de los dos numero es 30";
+} else if ($num1 + $num2 == 30) {
+	echo "La suma de los dos numeros es 30";
+} else {
+	echo "Ninguno de los dos numeros es 30 ni la suma de ambos es 30";
+}

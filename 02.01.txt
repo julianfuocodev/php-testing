@@ -1,0 +1,20 @@
+1 - Escribir un programa que dado un número devuelva si el mismo es primo o no. Un número primo es aquel número natural mayor a 1 que tiene únicamente dos divisores positivos distintos: él mismo y el 1.
+
+
+function primos($num) {
+	if($num == 2 or $num ==3 or $num ==5) {
+echo "El numero es primo";
+	} else if ($num % 2 == 0) {
+echo "El numero no es primo";
+	} else if ($num % 3 == 0) {
+echo "El numero no es primo";
+	}else if ($num % 5 == 0) {
+echo "El numero no es primo";
+	} else {
+echo "El numero es primo";
+	}}
+
+primos(8);
+
+
+******Nota: Para resolver este ejercicio lo que plantie fue una funcion que detecte si el numero usado es divisible por los tres primarios matematicos 2,3,5 (tomando en cuenta que 2, 3 y 5 son primos). Si el numero no cumple esa regla es primo.

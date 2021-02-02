@@ -1,0 +1,13 @@
+2-Escribir un programa que dado dos números enteros, obtenga la diferencia entre ellos y devuelva si la misma es par o impar.
+
+
+	$num1 = 10;
+	$num2 = 5;
+
+	$total = $num1 / $num2;
+
+if ($total % 2 == 0) {
+	echo "El numero es Par y es " . $total;
+} else {
+	echo "El numero es Impar y es " . $total;
+}

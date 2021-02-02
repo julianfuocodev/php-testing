@@ -1,0 +1,9 @@
+6-Dada la variable $var = ‘Bootcamp PHP Globant 2021; ingresar dicha variable como título de una tpágina HTML (Tag H1).
+
+
+
+
+
+	$var = "Bootcamp PHP Globant 2021";
+
+printf('<h1>' . $var . '</h1>');

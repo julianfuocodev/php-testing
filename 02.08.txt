@@ -1,0 +1,24 @@
+Escribir una función que permita realizar conversiones de distancia considerando que 1km = 1000 metros y que 1 m = 100 centimetros.
+
+
+function kilometros($num) {
+	$metros = $num * 1000 . " Metros <br>";
+	$centimetros = $num * 100000 . " Centimetros <br>";
+	echo $num . " Kilometros <br>" . $metros . $centimetros; 
+}
+function metros($num) {
+	$kilometros = $num / 100 . " Kilometros <br>";
+	$centimetros = $num * 100 . " Centimetros <br>";
+	echo $kilometros . $num . " Metros <br>" . $centimetros; 
+}
+function centimetros($num) {
+	$kilometros = $num / 100000 . " Kilometros <br>";
+	$metros = $num / 100 . " Metros <br>";
+	echo $kilometros . $metros . $num . " Centimetros <br>"; 
+}
+
+kilometros(7);
+metros(5);
+centimetros(300);
+
+

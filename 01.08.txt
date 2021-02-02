@@ -1,0 +1,11 @@
+8-Realizar una suma de todos los valores comprendidos entre 0 y 30 y devolver el resultado final por pantalla.
+
+	$num = 0;
+	$suma = 0;
+
+while ($num <=30) {
+      $suma = $suma + $num;
+      $num = $num + 1;
+    }
+
+     echo "La sumatoria es: $suma";

@@ -1,0 +1,13 @@
+9-Escribir un programa que calcule y muestre por pantalla el factorial de un número usando ‘for’. El factorial de un número es el producto de todos los enteros hasta dicho número, incluyendolo (ej: Factorial de 4 = 1*2*3*4).
+
+
+function fact($num) {
+	$total=1;
+	for ( $i = 1 ; $i <= $num ; $i++) {
+		$total=$total*$i;
+	} 
+	return $total;
+}
+
+	$var=fact(3);
+echo "Factoreo = ".$var;

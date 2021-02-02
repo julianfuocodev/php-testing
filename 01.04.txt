@@ -1,0 +1,27 @@
+4-Escribir un programa que dado un animal, devuelva los siguientes valores:
+		Perro = Perruno
+		Gato = Felino
+		Caballo = Salvaje
+		Pez = Acuático
+		Cualquier otro = No aplica
+
+
+
+	$animal = "Pez";
+
+switch ( $animal ) {
+	case "Perro":
+		echo "Perruno";
+		break;
+	case "Gato":
+		echo "Felino";
+		break;		
+	case "Caballo":
+		echo "Salvaje";
+		break;
+	case "Pez":
+		echo "Acuático";
+		break;
+	default:
+		echo "No aplica";
+}

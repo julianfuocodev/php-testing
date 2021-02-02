@@ -1,0 +1,28 @@
+2-Escribir un programa que simule ser una calculadora, donde dado dos números y la operación que se desea realiza, devuelva el resultado.
+
+
+
+function sumar($num1,$num2) {
+	$sumar = $num1 + $num2;
+	echo $sumar . "<br>";
+}
+
+function restar($num1,$num2) {
+	$restar = $num1 - $num2;
+	echo $restar . "<br>";
+}
+
+function dividir($num1,$num2) {
+	$dividir = $num1 / $num2;
+	echo $dividir . "<br>";
+}
+
+function multiplicar($num1,$num2) {
+	$multiplicar = $num1 * $num2;
+	echo $multiplicar . "<br>";
+}
+
+sumar(4,2);
+restar(4,2);
+multiplicar(4,2);
+dividir(4,2);

@@ -1,0 +1,9 @@
+Escribir un programa que dado un string, devuelva el mismo en forma invertida (Ej: Cancion => noicnaC). Investigar funciones pre-built que te ayuden a resolverlo.
+
+
+
+function string($txt) {
+	echo strrev ($txt);
+}
+
+string("dame vuelta");

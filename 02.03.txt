@@ -1,0 +1,11 @@
+Escribir un programa que incremnte un número pasado por referencia y devuelva si dicho nuevo número es Par o Impar.
+
+function num($num) {
+	if ($num % 2 == 0) {
+		echo "El numero es Par";
+	} else {
+		echo "El numero es impar";
+	}}
+	
+	
+num(5);
