@@ -1,0 +1,8 @@
+$a = 10; $b = 5;
+if ( $a > $b )
+    echo 'El mayor es A';
+else
+    echo 'El mayor es B';
+
+
+Sin tener el {} la funcion if funciona igual ya que el ; cierra la linea igual. Esto funciona solamente cuando se escribe una linea de codigo unicamente, cuando son 2 o mas se debe usar {}.

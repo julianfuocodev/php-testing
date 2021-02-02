@@ -1,0 +1,5 @@
+$x = 5;
+$y = '5';
+$x === $y;
+
+Se esta comparando estrictamente dos variables las cuales son una de tipo string y otra de tipo int. Por ende la comparacion === va a dar false. En el caso que sea una comparacion == va a dar true por que no distingue entre tipos. 

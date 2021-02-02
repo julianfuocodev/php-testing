@@ -1,0 +1,7 @@
+$a = 1;
+$b = &$a;
+$b = "2$b";
+echo "$a, $b";
+
+
+Cuando utilizamos el & generamos que la variable B utilice el mismo espacio de memoria que la variable A por ende los cambios realizados en B van a afectar en A ya que ocupan el mismo espacio en la memoria.
