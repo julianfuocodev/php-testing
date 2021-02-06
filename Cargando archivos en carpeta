@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Probando cargar archivos</title>
+</head>
+
+<body>
+<h2> Cargando Archivos </h2>
+
+<form action="index.php" method="post" enctype="multipart/form-data">
+  Seleccionar una imagen para subir.
+  <input type="file" name="subirArchivo" id="subirArchivo">
+  <input type="submit" value="Upload Image" name="submit">
+</form>
+
+<?php
+
+//Variables
+$target_dir = "descargas/";
+$target_file = $target_dir . basename($_FILES["subirArchivo"]["name"]);
+$uploadOk = 1;
+$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+
+
+//Verifico que sea una imagen
+if(isset($_POST["submit"])) {
+  $check = getimagesize($_FILES["subirArchivo"]["tmp_name"]);
+  if($check !== false) {
+    echo "El archivo es una imagen " . $check["mime"] . "<br>";
+    $uploadOk = 1;
+  } else {
+    echo "El archivo no es una imagen." . "<br>";
+    $uploadOk = 0;
+  }
+}
+
+
+//Verifico que el archivo exista
+if (file_exists($target_file)) {
+  echo "Perdon pero el archivo no existe selecciona un archivo con nombre diferente" . "<br>";
+  $uploadOk = 0;
+}
+
+
+// Verifico el tamaño del archivo
+if ($_FILES["subirArchivo"]["size"] > 500000) {
+  echo "Perdon, el archivo supera el tamaño maximo, selecciona un archivo mas pequeño." . "<br>";
+  $uploadOk = 0;
+}
+
+
+// Verifico formato de archivo
+if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+&& $imageFileType != "gif" ) {
+  echo "Perdon pero solo archivos JPG, JPEG, PNG y GIF estan permitidos." . "<br>";
+  $uploadOk = 0;
+}
+
+
+// Verifico que se haya cargado el archivo
+if ($uploadOk == 0) {
+  echo "Perdon, el archivo no se pudo cargar." . "<br>";
+
+// Si se pudo cargar entonces muestro el nombre del archivo y sino tiro un Error.
+} else {
+  if (move_uploaded_file($_FILES["subirArchivo"]["tmp_name"], $target_file)) {
+    echo "El archivo ". htmlspecialchars( basename( $_FILES["subirArchivo"]["name"])). " fue cargado correctamente. " . "<br>";
+  } else {
+    echo "ERROR al cargar el archivo." . "<br>";
+  }
+}
+
+?>
+
+</body>
+</html>
