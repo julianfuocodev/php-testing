@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Clase práctica desafio 1</title>
+</head>
+<body>
+
+<?php
+
+//Defino variable
+$concat = "";
+
+//Funcion
+function txt_to_number($txt) {
+for ($i=0; $i < strlen($txt); ++$i) { //Realizo un ciclo For por cada caracter que tiene el string
+	
+	$rest = substr($txt, $i, 1); //Separo en caracteres
+	$test2 = ord($rest);  //Paso cada caracter a ascii
+	$concat .= $test2;  // Concateno los numeros
+	$remplace = str_replace(7,1,$concat); //Remplazo los 7 por 1
+}
+
+return
+$remplace; // Retorno el numero final
+
+}
+
+$rest = txt_to_number("abc") - txt_to_number("abc"); //Llamo a la funcion y comparo
+echo $rest;
+?>
+
+</body>
+</html>
