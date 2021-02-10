@@ -1,0 +1,26 @@
+4-Dado un string con las temperaturas del mes, convertirlo en un array para luego ordenarlo de menor a mayor. Una vez ordenado necesitamos saber:
+-Las 5 menores temperaturas del mes.
+-Las 5 mayores temperaturas del mes.
+-El promedio de temperatura del mes.
+
+---------------------------------------------------------------------------
+
+$month_temp = "18,20,40,38,37,25,18,19,11,4,8,2,13,20,22,25,25,31,28,33";
+
+$monthTempToArray = [];
+$monthTempToArray = explode(",", $month_temp);
+
+sort($monthTempToArray);
+$firstFive = array_slice($monthTempToArray,0,5);
+
+arsort($monthTempToArray);
+$lastFive = array_slice($monthTempToArray,0,5);
+
+$sumTemp= array_sum($monthTempToArray);
+$promOfTemp = $sumTemp / count($monthTempToArray);
+
+print_r($firstFive);
+print_r($lastFive);
+print_r($promOfTemp);
+
+----------------------------------------------------------------------------
