@@ -1,0 +1,28 @@
+1-Dado el siguiente array, mostrar el siguiente texto, reemplazando los valores en negrita con el que corresponde en el array
+	
+	$color = [‘blanca’, ‘negro’, ‘amarillo’, ‘roja’, ‘azul’, ‘verde’];
+
+"El recuerdo de esa escena para mí es como un fotograma de película congelado para siempre en ese momento: 
+ la alfombra roja, el césped verde, la casa blanca, el cielo azul. El nuevo presidente y su primera dama. - Richard M. Nixon"
+  
+ --------------------------------------------------------------------------------------------------------------------------
+ 
+ $color = ["blanca", "negro", "amarillo", "roja", "azul", "verde"];
+
+$txt = "El recuerdo de esa escena para mí es como un fotograma de película congelado para 
+siempre en ese momento: la alfombra roja, el césped verde, la casa blanca, el cielo azul. 
+El nuevo presidente y su primera dama. - Richard M. Nixon";
+
+$newTxt_remplace0= str_replace("roja", $color[0] , $txt);
+$newTxt_remplace1= str_replace("verde", $color[1] , $newTxt_remplace0);
+$newTxt_remplace2= str_replace("blanca", $color[2] , $newTxt_remplace1);
+$newTxt_remplace3= str_replace("azul", $color[3] , $newTxt_remplace2);
+
+echo $newTxt_remplace3;
+
+---------------------------------------------------------------------------------------------------------------------------
+  
+  
+  
+  
+  
