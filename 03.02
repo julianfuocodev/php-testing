@@ -1,0 +1,14 @@
+2- Dado el siguiente array, ordenarlo alfabéticamente y mostrar por pantalla cada uno de sus valores en una lista de viñetas (etiqueta LI de HTML).
+
+	$color = [‘blanca’, ‘negro’, ‘amarillo’, ‘roja’, ‘azul’, ‘verde’];
+
+-------------------------------------------------------------
+
+	$color = ["blanca", "negro", "amarillo","roja", "azul", "verde"];
+	sort($color);
+
+	foreach ($color as $clave => $valor) {
+		echo "<li>" . $valor ;
+	}
+  
+ ----------------------------------------------------
