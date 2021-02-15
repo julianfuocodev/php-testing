@@ -1,0 +1,19 @@
+3- Dado el siguiente array, ordernarlo alfabéticamente por la capital de cada país y luego mostrar el siguiente texto para cada una de sus capitales:
+
+
+--------------------------------------------------------------------------------------
+
+arr = [
+	"Italia" => "Roma",
+	"Luxemburgo" => "Luxemburgo",
+	"Bélgica" => "Bruselas",
+	"Dinamarca" => "Copenhague",
+	"Finlandia" => "Helsinki",
+	"Francia" => "París",
+	"Eslovaquia" => "Bratislava"
+];
+	foreach($arr as $key => $value) {
+		echo $key . " es la capital de " . $value . "<br>"; 
+	}
+  
+--------------------------------------------------------------------------------------
