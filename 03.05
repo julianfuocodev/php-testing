@@ -1,0 +1,21 @@
+5- Crear una función que reciba dos parámetros. El primero por referencia, es un array que irá acumulando los valores. El segundo puede ser un string, un número o un array. Se deberá agregar el segundo parámetro al array pasado por referencia, considerando que si el segundo parámetro es un array, deberá sobreescribir aquellas claves duplicadas.
+
+
+----------------------------------------------------------------------------------------------------
+
+$arr =  [];
+$arr1 = [1,2,3,4,5];
+$arr2 = ["a","b","c"];
+
+function array_combination($array, $value) {
+
+if (is_array($value)) {
+	$arrNew = array_merge($array, $value);
+} else {
+	$arrNew = array_push($array, $value);
+} return $arrNew;
+}
+
+print_r (array_combination($arr,**valor**))
+
+-----------------------------------------------------------------------------------------------------
